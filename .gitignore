@@ -1,0 +1,12 @@
+/*
+!.gitignore
+!CMakeLists.txt
+!/src
+*.obj
+/src/CMakeFiles/
+/src/cmake_install.cmake
+/src/GameOfLife1970.exe
+!/src/*.h
+!/src/*.cpp
+!/src/game.txt
+!/src/CMakeLists.txt
