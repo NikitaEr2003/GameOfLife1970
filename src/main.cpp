@@ -52,7 +52,7 @@ int main() {
 
         }
         Sleep(2000);
-        cout << "\033[2J\033[1;1H";
+        system("cls");
 
 
 
