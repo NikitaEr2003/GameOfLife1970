@@ -3,7 +3,9 @@ project(GameOfLife1970)
 
 set(CMAKE_CXX_STANDARD 17)
 
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static -static-libgcc -static-libstdc++")
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static -static-libgcc -static-libstdc++")
+endif()
 
 add_subdirectory(src)
 
